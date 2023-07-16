@@ -1,0 +1,249 @@
+﻿<!DOCTYPE HTML>
+
+<!--
+    Greatness by FreeHTML5.co
+    Twitter: http://twitter.com/fh5co
+    URL: http://FreeHTML5.co
+-->
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Greatness &mdash; Free Website Template, Free HTML5 Template by FreeHTML5.co</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
+    <meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+    <meta name="author" content="FreeHTML5.co" />
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+
+    <!--<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600,400italic,700' rel='stylesheet' type='text/css'>-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link href="css/MyStyleSheet.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+            crossorigin="anonymous"></script>
+    <script src="js/ajaxCalls.js"></script>
+    <script src="js/ParkLotAdminJS.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-BLg5FtohqNQK0+IGlzYvNlDOtkS9S2FNnJnT2T9XjT4hMzPxMViX+7jzAg1DZxJl" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" integrity="sha384-uoBUvxmTJjzIu7cY3KG2QJeZSxSxN0C0V+szT9uPo7/4+0sSRbGSVPeCJwDlWJ8Y" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+
+    <div class="gtco-loader"></div>
+
+    <div id="page">
+        <nav class="gtco-nav" role="navigation">
+            <!--תפריט-->
+            <div class="gtco-container">
+                <div class="row">
+                    <div class="col-xs-2">
+                       
+                    </div>
+                    <div class="col-xs-8 text-right menu-1" id="menu">
+
+                        <h3 id="archiveH3">לוח מידע עבור מנהל המערכת</h3>
+                        <img src="images/Admin.png" />
+                    </div>
+                    <div class="col-xs-2">
+                        <!--<img id="Parking-lot-logo" src="images/logo-parking lot.png" />-->
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="gtco-section">
+
+            <div class="gtco-container" id="AdminPage">
+                <div class="animate-box frame">
+                    <div class="row arcion1">
+                        <div class="col-12">
+
+
+
+                        </div>
+                    </div>
+                   
+                    <div class="admin-bar">
+                        <div class="admin-item">
+                            <i class="fa fa-users"></i>
+                            <div class="admin-number" id="users-number">0</div>
+                            <div class="admin-label">משתמשים רשומים</div>
+                        </div>
+                        <div class="admin-item">
+                            <i class="fa fa-handshake-o"></i>
+                            <div class="admin-number" id="help-number">0</div>
+                            <div class="admin-label">השאלות</div>
+                        </div>
+                        <div class="admin-item">
+                            <i class="fa fa-clipboard"></i>
+                            <div class="admin-number" id="requests-number">0</div>
+                            <div class="admin-label">בקשות</div>
+                        </div>
+                        <div class="admin-item">
+                            <i class="fa fa-clipboard"></i>
+                            <div class="admin-number" id="Match-number">0</div>
+                            <div class="admin-label">התאמות</div>
+                        </div>
+                    </div>
+
+                    <div class="row animate-box frame fadeInUp animated-fast" id="CountMatch">
+                        <h1 id="choosebuilding">כמות בקשות שאושרו מסך כל הבקשות</h1>
+                        <p>בחירת בניין:</p>
+                        <input list="cityDL" id="Adress" name="cityDL" autocomplete="on">
+                        <datalist name="Adress" id="cityDL">
+                            <option disabled selected value>"
+                        </datalist>
+                        <button id="ShowBuilding" value="הצג" class="btn btn-primary Admin-btn">הצג</button>
+                        <div id="MatchTable" class="col-12">
+                            <canvas id="myChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="row animate-box frame fadeInUp animated-fast" id="surveyCha">
+                        <h1 id="choosebuilding3">תוצאות הסקר</h1>
+                        <label for="year-input"> בחירת שנה:</label>
+                        <select id="year-input" name="year"></select>
+                        &nbsp;
+                        <label for="quarterly-input">בחירת רבעון:</label>
+                        <select name="quarterly" id="quarterly" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                        &nbsp;
+                        <label for="question-input">בחירת שאלה:</label>
+                        <select name="questions" id="questions" required>
+                            <option value="1">חסכתי זמן בחיפוש אחר חניה</option>
+                            <option value="2">חסכתי כסף ושילמת פחות על חניה</option>
+                            <option value="3">אני מרגיש שיצרתי קשרים נוספים עם שכנים</option>
+                            <option value="4">קיבלתי ביטולים בתדירות גבוהה</option>
+                            <option value="5">החניה שלי פונתה בזמן בתום ההשאלה</option>
+                        </select>
+                        <button id="ShowBuilding3" value="הצג" class="btn btn-primary Admin-btn">הצג</button>
+                        <div id="Survey3" class="col-12">
+                            <canvas id="mySurveyChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="row animate-box frame fadeInUp animated-fast" id="CountMatch">
+                        <h1 id="choosebuilding">כמות מטבעות שנותרה למשתמשים</h1>
+                        <p>בחירת בניין:</p>
+                        <input list="cityDL" id="AdressCoins" name="cityDL" autocomplete="on">
+                        <datalist name="Adress" id="cityDLCoins">
+                            <option disabled selected value>"
+                        </datalist>
+                        <button id="ShowBuilding4" value="הצג" class="btn btn-primary Admin-btn">הצג</button>
+                        <div id="CoinsTable" class="col-12">
+                            <canvas id="myChartCoins"></canvas>
+                        </div>
+                    </div>
+
+
+                    <div class="row animate-box frame fadeInUp animated-fast" id="CountHours">
+                        <h1 id="choosebuilding2">ביקוש לחניה לפי שעות פר חודש</h1>
+                        <p>בחירת בניין:</p>
+                        <input list="cityDL" id="Adress2" name="cityDL" autocomplete="on">
+                        <datalist name="Adress" id="cityDL2">
+                        </datalist>
+                        <p>בחירת חודש :</p>
+                        <select name="Month" id="Month" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <button id="ShowHours" value="הצג" class="btn btn-primary Admin-btn">הצג</button>
+                        <div id="hours" class="col-12">
+                            <canvas id="myHoursChart"></canvas>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <div class="gototop js-top">
+        <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+    </div>
+
+    <!-- jQuery
+    <script src="js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- Carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- countTo -->
+    <script src="js/jquery.countTo.js"></script>
+    <!-- Magnific Popup -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/magnific-popup-options.js"></script>
+    <!-- Main -->
+    <script src="js/main.js"></script>
+
+
+
+</body>
+</html>
+
